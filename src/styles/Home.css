@@ -1,0 +1,154 @@
+.home-grid {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh */
+  animation: fadeIn 1s forwards;
+  opacity: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  flex: 5;
+  --bs-gutter-x: 0px; /* Override Bootstrap's default gutter */
+}
+
+.row.reverse {
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1.5fr;
+  flex: 7;
+}
+
+.row:first-child {
+  height: 50%;
+}
+.row:last-child {
+  height: 60%;
+}
+
+.photo {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  box-shadow: 6px 6px 6px #aaa;
+}
+
+
+.text {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 2rem; */
+  /* font-size: 1.5rem; */
+  /* background-color: #faf8f3; */
+  color: #69443c;  
+  /* margin: auto; */
+  /* font-family: 'Playfair Display', serif; */
+  padding-bottom: 2%;
+}
+
+.header {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 2rem; */
+  /* background-color: #faf8f3; */
+  letter-spacing: 2px;
+
+  font-family: 'Playfair Display', serif;
+  margin-top: 0;
+  text-shadow: 4px 4px 4px #aaa;
+  font-weight: 300;
+}
+
+.body-text {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 2rem; */
+  /* background-color: #faf8f3; */
+  font-family: 'Poppins', sans-serif;
+  margin-top: 2.5%;
+}
+
+/* .text-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 3% 5% 5% 3%;
+} */
+
+.text.bottom-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10% 5% 3%;  /* right padding ~ demarcates edge */
+  height: 100%;
+  box-sizing: border-box;
+  margin-top: 1%;
+}
+
+.text-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;  /* align each row to right edge */
+  gap: 1.5rem;
+}
+
+.text-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.label {
+  font-family: 'Playfair Display', serif;
+  color: #69443c;
+  text-shadow: 4px 4px 4px #aaa;
+  text-align: right;
+  min-width: 3ch;  /* helps numbers align better */
+}
+
+.value {
+  font-family: 'Poppins', sans-serif;
+  color: #69443c;
+  white-space: nowrap;
+}
+
+.bootstrap-classes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-family: 'Poppins', sans-serif;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 90%;
+  padding: 4%;
+  box-shadow: 4px 4px 4px #aaa;
+}
+
+.credits {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: small;
+  font-family: "Poppins", sans-serif;
+
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,42 @@
+.deck-root {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  user-select: none;
+  overscroll-behavior-y: contain;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
+    helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+}
+
+.deck-center {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deck-center > div > div {
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  will-change: transform;
+  border: 1em solid #fff;
+  border-bottom: 4em solid #fff;
+  border-radius: 3px;
+  box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4),
+    0 10px 10px -10px rgba(50, 50, 73, 0.3);
+}
+
+.deck-caption {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #444;
+  pointer-events: none;
+}
